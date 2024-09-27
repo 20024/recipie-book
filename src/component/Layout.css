@@ -1,0 +1,16 @@
+.layout-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.content{
+    padding: 45px;
+}
+.content h3{
+    padding-top: 60px;
+    font-style: italic;
+    font-size: 22px;
+    color: brown;
+}
+

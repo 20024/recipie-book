@@ -1,0 +1,258 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  padding: 15px 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.logo h3 {
+  padding-left: 20px;
+  color: #f7f4f4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Search bar styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  height: 80px;
+  padding-right: 30px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 20px 40px 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #333;
+}
+
+.search-icon {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 60px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-icon svg {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover svg {
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  height: 450px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+p {
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.recipe-button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-button:hover {
+  background-color: #e64a19;
+}
+/* General container for all meals */
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card container */
+.meal-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.meal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+/* Meal name styling */
+.meal-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+/* Recipe button styling */
+.recipe-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-button:hover {
+  background-color: #e5533d;
+}
+
+.meal-info {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.meal-info h2 {
+  font-size: 35px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.meal-info img {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.meal-info h3 {
+  font-size: 1.8rem;
+  color: #e67e22;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.meal-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.meal-info li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.meal-info p {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+}
+
+.meal-info .back-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.meal-info .back-button:hover {
+  background-color: #c0392b;
+}

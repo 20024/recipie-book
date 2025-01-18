@@ -16,7 +16,7 @@ const Card = ({ details }) => {
             className="meal-image" 
           />
           <p>{curItem.strMeal}</p>
-          <Link to={`/meal/${curItem.idMeal}`}> {/* Navigate to MealInfo page with the meal ID */}
+          <Link to={`/meal/${curItem.idMeal}`}>{}
             <button className="recipe-button">
               Get Recipe
             </button>

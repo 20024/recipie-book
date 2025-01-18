@@ -36,7 +36,7 @@ const Header = () => {
               className="search-input"
               onChange={handleInput} 
             />
-            <button className="search-icon" onClick={food}>  {/* Corrected onClick to the button */}
+            <button className="search-icon" onClick={food}> 
               <CiSearch size={20} />
             </button>
           </div>
